@@ -17,3 +17,9 @@ This is an app that displays the current weather and suggests activities based o
 <br>
 
 
+
+
+https://github.com/user-attachments/assets/6e78375e-f84b-434e-bae4-83ada481e53e
+
+
+
