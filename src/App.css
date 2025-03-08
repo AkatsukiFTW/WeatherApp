@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.background{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.date{
+  font-size: 20px;
+  color:white ;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 3%;
+}
+.info{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ height: 70vh;
+ 
+}
+.weather-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 30px;
+  width: 500px;
+  height: 100%;
+  gap: 35px;
+}
+.town{
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.search{
+  background-color: #fff;
+  border-radius: 20px;
+  width: 700px;
+  height: 40px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 8%;
+}
+.searchBtn{
+  background: inherit;
+  border: none;
+  cursor: pointer;
+}
+.searchBtn img{
+  width: 20px;
+  height: 20px;
+}
+.inputSearch{
+  border: none;
+  outline: none;
+  width: 90%;
+  height: 100%;
+  font-size: 1rem;
+  font-size: 23px;
+}
+.hw-info{
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  color: #424242;
+  width: 100%;
+  margin-top: 2rem;
+}
+img.icon {
+  width: 30px;
+  position: relative;
+  top: 7px;
+  margin-right:10px ;
+}
+.temperature{
+  font-size: 3rem;
+  color: #424242;
+  margin: 10px 0px 10px 0px;
+}
+.description{
+  font-size: 1.5rem;
+  color: #424242;
+}
+.activities{
+  width: 80%;
+  margin-bottom: 30px;
+}
+.activity{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.activity-container{
+  width: 100%;
+}
+.activity h1{
+  font-size: 2rem;
+  color: #000000;
+  font-weight: 500;
+  margin-left:40px;
+}
+.activity-box ul{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+
+}
+.activity-box li{
+  height: 6rem;
+  list-style: none;
+  font-size: 25px;
+  background-color: #ebebeb50;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, scale 0.3s ease-in-out , background-color 0.3s ease-in-out;
+  width: 100%;
+}
+.activity-box li:hover{
+  scale: 1.1;
+  background-color: #ebebeba1
+ 
+}
+
+@media (max-width: 480px){
+  .info-container{
+    height: 100%;
+  }
+  .weather-info{
+    width: 100%;
+  }
+  .search{
+    width: 80%;
+    z-index: 100;
+  }
+  .activities {
+    width: 90%;
+  }
+  .inputSearch{
+    width: 80%;
+    
+    
+  }
+  .activity h1{
+    margin-left: 0px;
+  }
+  .activity-box li{
+    width: 100%;
+  }
+  .background{
+    height: 200vh;
+  }
+}
